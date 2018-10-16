@@ -33,7 +33,15 @@ X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 
 # Fitting classifier to the Training set
+
+## importing keras
+import keras
+from keras.models import Sequential
+from keras.layers import Dense
+
 # Create your classifier here
+
+classifier = Sequential()
 
 # Predicting the Test set results
 y_pred = classifier.predict(X_test)
